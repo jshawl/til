@@ -26,7 +26,7 @@ Here's how I accomplished this task with an nginx alias:
 	server_name jshawl.com;
 	index index.html;
 
-	location /project-name/
+	location /project-name/ {
 	    alias /var/www/jshawl.com/project-name/_site/;
 	}
     } 
