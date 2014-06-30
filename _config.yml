@@ -1,4 +1,5 @@
 name: til
+title: til
 markdown: redcarpet
 pygments: true
 baseurl: /til/
