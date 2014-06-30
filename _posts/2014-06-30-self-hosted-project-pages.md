@@ -20,17 +20,16 @@ Essentially, I wanted to set the document root of http://jshawl.com/project-name
 
 Here's how I accomplished this task with an nginx alias:
 
-   server {
-     listen 80;
-     root /var/www/jshawl.com;
-     server_name jshawl.com;
-     index index.html;
+    server {
+	listen 80;
+	root /var/www/jshawl.com;
+	server_name jshawl.com;
+	index index.html;
 
-     location /project-name/
-       alias /var/www/jshawl.com/project-name/_site/;
-     }
-
-   } 
+	location /project-name/
+	    alias /var/www/jshawl.com/project-name/_site/;
+	}
+    } 
 
 In a later post, I'd like to explore the possibility of doing this automatically, perhaps
 with a `try_files` directive.
