@@ -10,14 +10,12 @@
   padding: 0;
 }
 
-html, body { height: 100%; }
-
 body {
   background-color: #FFF;
   font: 13.34px Helvetica, Arial, sans-serif;
   font-size: small;
   text-align: center;
-  padding:0 2em 2em 2em;
+  padding:0 2em 4em 2em;
 }
 
 h1, h2, h3, h4, h5, h6 {
