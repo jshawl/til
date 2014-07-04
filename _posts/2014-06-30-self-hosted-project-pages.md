@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Self hosted project pages"
+tags: git nginx
 ---
 
 Today I learned how to self-host gh-pages-esque project pages in an easy way

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Dropdown change events and selectedIndex
+tags: javascript
 ---
 
 Today I learned how to listen to `<select>` change events, and store
