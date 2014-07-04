@@ -5,6 +5,8 @@ layout: post
 Today I learned how to build a basic real-time chat application using websockets
 and a gem named Faye.
 
+![](/til/img/faye.gif)
+
 Faye is a publish-subscribe messaging system that allows for plug-n-play socket
 connections for real time apps.
 
