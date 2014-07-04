@@ -3,18 +3,20 @@ layout: default
 title: til
 ---
 
- <h1>Tags</h1>
   {% capture tagString %}{% for tag in site.tags %}{{ tag[0] }}{% unless forloop.last %}|{% endunless %}{% endfor %}{% endcapture %}
   {% assign tags = tagString | split: '|' | sort: 'downcase' %}
     {% for tag in tags %}
     {% assign slug = tag | downcase | replace: ' ', '_' %}
     <div class="tag" id="{{ slug }}">
+      <div class='site'>
+      <a href='#'>x</a>
       <h3>{{ tag | downcase }}</h3>
       <ul>
         {% for post in site.tags[tag] %}
-        <li><a href="{{post.url}}">{{post.title}}</a></li>
+        <li><a href="/til{{post.url}}">{{post.title}}</a></li>
         {% endfor %}
       </ul>
+      </div>
     </div>
     {% endfor %}
 
