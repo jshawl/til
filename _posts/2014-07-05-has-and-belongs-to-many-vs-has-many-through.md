@@ -18,7 +18,7 @@ join table might look like this.
     |---------|-------------|
 
 This way, you'll be able to find all posts by category and/or
-all categories by post.
+all categories by post, i.e. a many to many relationship.
 
 You won't be able to add any more columns with `has_and_belongs_to_many`, though.
 It might be useful to track what time the category was added or even add a new `tag_id` column.
@@ -30,14 +30,13 @@ The solution?
 models/collection.rb
 
 ```ruby
-class Thread < ActiveRecord::Base
+class Categorization < ActiveRecord::Base
   has_many :posts
-  has_many :replies
+  has_many :categories
 end
 
 class Post < ActiveRecord::Base
-  belongs_to :post
-  has_many :replies :through => :categorizations
+  belongs_to :category
 end
 
 
@@ -46,5 +45,4 @@ class Category < ActiveRecord::Base
 end
 ```
 
-
-    
+That is, a `Post` has many `:categories` through categorizations.
