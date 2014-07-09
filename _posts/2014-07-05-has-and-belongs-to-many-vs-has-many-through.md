@@ -31,17 +31,16 @@ models/collection.rb
 
 ```ruby
 class Categorization < ActiveRecord::Base
-  has_many :posts
-  has_many :categories
+  belongs_to :posts
+  belongs_to :categories
 end
 
 class Post < ActiveRecord::Base
-  belongs_to :category
+  has_many :categories, through: :categorizations
 end
 
-
 class Category < ActiveRecord::Base
-  belongs_to :post
+  has_many :posts, through: :categorizations
 end
 ```
 
