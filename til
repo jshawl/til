@@ -1,0 +1,9 @@
+#!/bin/bash
+
+file=_posts/`date +"%F"`-`date +"%F"`.md
+echo "---" >> $file
+echo "layout: post" >> $file
+echo "---" >> $file
+echo "" >> $file
+vim -c 'startinsert' $file +4
+
