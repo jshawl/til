@@ -1,9 +1,10 @@
 #!/bin/bash
 
-file=_posts/`date +"%F"`-`date +"%F"`.md
+file=/var/www/jshawl.com/til/_posts/`date +"%F"`-`date +"%s"`.md
 echo "---" >> $file
 echo "layout: post" >> $file
 echo "---" >> $file
 echo "" >> $file
-vim -c 'startinsert' $file +4
+echo "" >> $file
+vim -c 'startinsert' $file +5
 
