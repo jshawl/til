@@ -1,6 +1,6 @@
 name: til
 title: til
-markdown: redcarpet
+markdown: kramdown
 highlighter: pygments
 baseurl: /til
 permalink: /:title/
