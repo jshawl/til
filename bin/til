@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+require_relative "../lib/tid"
+if ARGV.empty?
+  Tid.new($stdin.readlines, {multiline: true})
+elsif ARGV.include? '-a'
+  Tid.add(ARGV)
+else
+  Tid.new(ARGV)
+end
