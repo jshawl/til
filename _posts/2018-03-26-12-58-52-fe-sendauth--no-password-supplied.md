@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "fe_sendauth: no password supplied"
-date:   2018-03-26 12:58:52
+title: "fe_sendauth: no password supplied"
+date: 2018-03-26 12:58:52
 ---
 
 fe_sendauth: no password supplied

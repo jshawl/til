@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "restart passenger apps when request number reaches"
-date:   2018-04-03 15:19:06
+title: "restart passenger apps when request number reaches"
+date: 2018-04-03 15:19:06
 ---
 
 restart passenger apps when request number reaches N

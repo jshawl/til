@@ -1,9 +1,8 @@
 ---
 layout: post
-title:  "caching with nginx and rails"
-date:   2018-03-29 13:20:46
+title: "caching with nginx and rails"
+date: 2018-03-29 13:20:46
 ---
-
 
 I couldn't have done it without https://mattbrictson.com/nginx-reverse-proxy-cache
 
@@ -51,5 +50,5 @@ server {
 In doing this, I actually realized that my current caching situation isn't working
 as expected.
 
-I think spinning up an additional $20/m server will actually reduce my overall
+I think spinning up an additional \$20/m server will actually reduce my overall
 costs. Radical
